@@ -4,6 +4,7 @@ from django.views.decorators.csrf import csrf_exempt
 from .utils import Utils
 from .serializers import RecommendationSerializer, BmiSerializer
 import json
+import gunicorn
 # Create your views here.
 @csrf_exempt
 def meal_recommendation(request):
